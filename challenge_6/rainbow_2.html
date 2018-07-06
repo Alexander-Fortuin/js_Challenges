@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- <p id="placement"></p> -->
+    <div class="container">
+      <div id="red"></div>
+      <div id="orange"></div>
+      <div id="yellow"></div>
+      <div id="green"></div>
+      <div id="blue"></div>
+      <div id="indigo"></div>
+      <div id="violet"></div>
+    </div>
+    <script type="text/javascript">
+      'use strict'
+
+      let rainbow = [
+        document.getElementById('red'),
+        document.getElementById('orange'),
+        document.getElementById('yellow'),
+        document.getElementById('green'),
+        document.getElementById('blue'),
+        document.getElementById('indigo'),
+        document.getElementById('violet')
+      ];
+
+      var rainbowColor = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+      for (var i = 0; i < rainbowColor.length; i++) {
+        rainbow[i].style.backgroundColor = rainbowColor[i];
+        rainbow[i].innerHTML = rainbowColor[i];
+
+      };
+
+
+
+      // var rainbow = new Array("red", "orange", "yellow", "green", "blue", "indigo", "violet");
+
+      // var rainbow = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+      // console.log(rainbow);
+
+
+        // var i;
+        // var text = "";
+        // var colour = document.getElementsByClassName('i').style.color = rainbow[i];
+        // for (i = 0; i < rainbow.length; i++) {
+        //     text += rainbow[i] + "<br>" + color;
+        // }
+
+
+      // var rainbow = document.getElementsByClassName('rainbow');
+
+
+
+    </script>
+  </body>
+</html>

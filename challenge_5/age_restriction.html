@@ -1,0 +1,61 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>JavaScript</title>
+
+    </head>
+
+    <body>
+
+        <!-- <input id="year" id="month" id="day" id="age-form" type="date" name="" value="">
+        <input id="day" type="date" name="" value="">
+        <input id="month" type="text" name="" value="">
+        <input id="year" type="select" name="" value=""> -->
+
+        <!-- <div id="ageWrapper">
+          <input class="yourage" type="number" name="ageNo" value="">
+        </div>
+        <div id="2young">
+
+        </div> -->
+
+        <p>Insert your age please</p>
+        <input id="yourage" type="number" name="ageNo" value="0">
+
+        <button onclick="myFunction()">Verify</button>
+
+        <p id="demo"></p>
+
+        <script type="text/javascript">
+          //get the age (input value) with js
+          // var age = document.getElementsByClassName('yourage').value;
+          // function () {
+          //
+          //   //write an if else statement checking if the age is less than 13
+          //   if(age < 13){
+          //     //display div must show a text such as "You are too young to use the internet"
+          //     document.getElementById('2young').write = "You are too young to use the internet"
+          //   }
+          // }
+
+
+          //check for the following ages 6, 13, 16, 18, 21, 23, 30+
+
+
+          function myFunction() {
+            var input = document.getElementById('yourage');
+            var greeting;
+            age = input.value;
+            if (age < 13) {
+                greeting = "You are too young to use the internet";
+            } else {
+                greeting = "Welcome";
+            }
+            document.getElementById("demo").innerHTML = greeting;
+          };
+        </script>
+
+    </body>
+
+</html>

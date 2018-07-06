@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p>Display the Boolean value of 0:</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo3"></p>
+
+    <p>Display the value of Boolean(10 < 9):</p>
+
+    <button onclick="myFunction2()">Try it</button>
+
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+
+
+    <!------------------------------------------------------------->
+    <script type="text/javascript">
+      var cars = ["Saab", "Volvo", "BMW"];
+        document.getElementById("demo").innerHTML = cars;
+
+      console.log(cars);
+
+      var car = {type:"Fiat", model:"500", color:"white"};
+
+      console.log(car);
+
+      var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("demo2").innerHTML = txt.length;
+
+      console.log(txt);
+
+      var x = 123e5;    // 12300000
+      var y = 123e-5;   // 0.00123
+
+      console.log(x);
+      console.log(y);
+
+      // function myFunction() {
+      //   var z = 0;
+      //     document.getElementById("demo3").innerHTML = Boolean(z);
+      // }
+
+      // console.log(z);
+      var a= 10>9;
+      function myFunction2() {
+        document.getElementById("demo4").innerHTML = Boolean(a);
+      }
+
+      console.log(a);
+
+      console.log(null);
+      console.log(0/0);
+
+
+
+
+
+      var d = new Date();
+      document.getElementById("demo5").innerHTML = d;
+
+
+      console.log(d);
+
+      var b;
+      console.log(b);
+
+
+    </script>
+  </body>
+</html>
